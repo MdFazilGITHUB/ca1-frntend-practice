@@ -101,6 +101,7 @@ body{
     padding-left: 16px;
     padding-right: 16px;
     font-size: 20px;
+    outline: none;
 }
 
 #submit{
@@ -111,13 +112,15 @@ body{
     font-size: 16px;
     font-weight: 500;
     background-color: white;
+    -webkit-transition: 0.2s ease-in-out;
+    transition-delay: 0.09s;
 }
 
 #submit:hover{
     background-color: #3c4858;
     color: white;
     transition-delay: 0.3s;
-    -webkit-transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-out;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 8px 0px, rgba(0, 0, 0, 0.8) 0px 3px 3px -2px, rgba(0, 0, 0, 0.7) 0px 3px 4px 0px;
 }
 
@@ -148,6 +151,7 @@ font-size: 18px;
     height: 170px;
     width: 270px;
     margin-right: 20px;
+    
 }
 
 .det3 p{
@@ -169,5 +173,18 @@ font-size: 18px;
 
 .last-part h6{
     font-weight: 500;
-    font-size: 13px;
+    font-size: 10px;
+    /* padding: none; */
+}
+
+.det1>img{
+   display: flexbox;
+}
+
+#input:focus{
+    border-bottom: 2px solid blue;
+}
+
+.last-part{
+    padding: none;
 }
